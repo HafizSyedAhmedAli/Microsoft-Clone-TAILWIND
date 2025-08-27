@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  /* Extra Small 540px */
+  --breakpoint-xs: 33.75rem;
+  /* Medium Large 860px */
+  --breakpoint-mlg: 53.75rem;
+  /* Large 1084px */
+  --breakpoint-lg: 67.75rem;
+}
+
+.link {
+  @apply p-4 border border-gray-200 mlg:hidden;
+}
+
+.link:focus {
+  @apply border-black border border-dashed;
+}
+
+.link-menu {
+  @apply mlg:ml-4 mlg:font-semibold mlg:w-46;
+}
+
+.show-more {
+  @apply flex items-center justify-between mlg:whitespace-nowrap p-4 border border-gray-200   mlg:border-none;
+}
+
+.show-more:focus {
+  @apply border-black border border-dashed;
+}
+
+.link-menu-item {
+  @apply p-4 border border-gray-200 pl-12 mlg:border-none mlg:pl-0 mlg:font-light mlg:whitespace-nowrap;
+}
+
+.link-menu-item:focus {
+  @apply border-black border border-dashed;
+}
+
+.sitemap {
+  @apply hidden mlg:block mlg:bg-[#e6e6e6] mlg:text-center mlg:font-light mlg:pb-2 mlg:border-b-2 mlg:border-black;
+}
+
+.features {
+  @apply bg-gray-200 absolute inset-0 w-fit -translate-x-96 mlg:bg-transparent mlg:static mlg:translate-x-0 mlg:flex mlg:space-x-4 mlg:text-sm mlg:mr-8 flex-1;
+}
+
+.fitem {
+  @apply hover:underline hover:underline-offset-8 cursor-pointer;
+}
+
+.navTab {
+  @apply hidden mr-6 mlg:flex mlg:items-center p-2 mlg:border-t mlg:border-l mlg:border-r mlg:border-transparent mlg:mt-0.5 mlg:underline-offset-8 mlg:decoration-2 mlg:-mb-2;
+}
+
+.navTab:focus {
+  @apply border-black border-t border-l border-r border-dashed mlg:bg-[#f2f2f2];
+}
+
+.left {
+  @apply flex flex-col justify-center items-start py-8 space-y-4 mx-5 lg:absolute lg:top-40 lg:w-1/3 lg:pl-24;
+}
+
+.item {
+  @apply cursor-pointer flex xs:w-1/2  items-center space-x-2 text-sm my-4;
+}
+
+.card {
+  @apply cursor-pointer mx-3 bg-white shadow-xl mb-16 flex flex-col;
+}
+
+.card-button {
+  @apply text-white bg-[#0067b8] px-2 py-2 font-semibold rounded-xs xs:mt-auto;
+}
+
+.section {
+  @apply space-y-4 my-8 xs:w-1/3 lg:w-fit;
+}
