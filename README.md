@@ -2,6 +2,8 @@
 
 A responsive clone of the Microsoft homepage built with Tailwind CSS.
 
+🔗 **Live Demo:** [ms-clone-tailwind.netlify.app](https://ms-clone-tailwind.netlify.app/)
+
 ## Features
 
 - **Responsive Design:** Adapts to mobile, tablet, and desktop screens.
